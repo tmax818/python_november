@@ -92,4 +92,4 @@
 
 | week | day |  assignment                                                                                     | type     |
 |------|-----|-------------------------------------------------------------------------------------------------|:--------:|
-| 3    | Mon | [Recipes](https://github.com/tmax818/counter_python)                                            | Core     |
+| 3    | Mon | [Recipes](https://github.com/tmax818/recipes_python)                                            | Core     |
