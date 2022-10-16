@@ -65,7 +65,7 @@
 |      |     | [MySQL Countries](https://github.com/tmax818/mysql_countries_python)                            | Core     |
 
 
-## Flask + MySQL (Day 8 and 9)
+## Flask + MySQL (Days 8 and 9)
 
 
 | week | day |  assignment                                                                                     | type     |
