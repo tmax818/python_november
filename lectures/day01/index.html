@@ -33,54 +33,80 @@
           </a>
         </section>
 
-    <section data-markdown="01orientation.md"
-        data-separator="^---"
-        data-separator-vertical="^--"
-        data-separator-notes="^note:"
-        data-charset="iso-8859-15">
-    </section>
+        <section>
+          <section>
+            <h2>Assignments</h2>
+            <a href="https://github.com/tmax818/hello_world_python/archive/refs/heads/main.zip" download>hello world</a>
+          </section>
+        </section>
 
-    <!-- <section data-markdown="02introSetUp.md"
-        data-separator="^---"
-        data-separator-vertical="^--"
-        data-separator-notes="^note:"
-        data-charset="iso-8859-15">
-    </section> -->
+        <section>
+          <section>
+            <h2>Data Types</h2>
+            <p class="fragment">primative</p>
+            <p class="fragment">composite</p>
+          </section>
 
-    <section>
-      <section>
-        <h2>Assignments</h2>
-        <a href="https://github.com/tmax818/hello_world_python/archive/refs/heads/main.zip" download>hello world</a>
-      </section>
-    </section>
+          
+        </section>
+        
+        <section>
+          <h2>Primative</h2>
+          <p class="fragment">Numbers</p>
+          <p class="fragment">Booleans</p>
+          <p class="fragment">Strings</p>
+          <p class="fragment">None</p>
+        </section>
 
-    <section data-markdown="03fundamentals.md"
-        data-separator="^---"
-        data-separator-vertical="^--"
-        data-separator-notes="^note:"
-        data-charset="iso-8859-15">
-    </section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						import React, { useState } from 'react';
 
-  <section data-markdown="04fundamentals.md"
-        data-separator="^---"
-        data-separator-vertical="^--"
-        data-separator-notes="^note:"
-        data-charset="iso-8859-15">
-    </section>
+						function Example() {
+						  const [count, setCount] = useState(0);
 
-    <section data-markdown="05conditionalsLoops.md"
-        data-separator="^---"
-        data-separator-vertical="^--"
-        data-separator-notes="^note:"
-        data-charset="iso-8859-15">
-    </section>
- 
-    <section data-markdown="06functions.md"
-        data-separator="^---"
-        data-separator-vertical="^--"
-        data-separator-notes="^note:"
-        data-charset="iso-8859-15">
-    </section>
+						  return (
+						    ...
+						  );
+						}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">With animations</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+
+						function SecondExample() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+					</script></code></pre>
+				</section>
+        
 
       </div>
     </div>    
@@ -92,16 +118,16 @@
 <script src="./../../plugin/highlight/highlight.js"></script>
 <script>
   Reveal.initialize({
-    
+    controls: true,
+				progress: true,
+				center: true,
+				hash: true,
     plugins: [           
           RevealZoom,
           RevealNotes,
           RevealSearch,
           RevealMarkdown,
-          RevealHighlight, ],
-    
-        controlsTutorial: true,
-        width: 1300
+          RevealHighlight ]
       });
     </script>
   </body>
