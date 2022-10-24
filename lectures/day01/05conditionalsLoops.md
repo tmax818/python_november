@@ -2,6 +2,37 @@
 --
 >Conditional statements allow us to run certain lines of code depending on whether certain conditions are met. 
 --
+
+--
+If we want to execute code if some condition is true:
+```py
+if (some condition that evaluates to True or False):
+    if it's True, the code in here will run
+```
+notice the indentation
+<!-- .element: class="fragment" -->
+--
+--
+If we want to execute code if some condition is true and do something else if it's false:
+```py
+if (some condition that evaluates to True or False):
+    if it's True, the code in here will run
+else:
+    if it's False, the code in here will run
+```
+--
+
+--
+If we want to check multiple things:
+```py
+if (some condition that evaluates to True or False):
+    if it's True, the code in here will run
+elif (some condition that evaluates to True or False):
+    code in here will run if the conditions above it are False
+else:
+    if all the above condtions are False, the code in here will run
+```
+--
 ```py
 condition = True
 if condition:
@@ -136,6 +167,4 @@ for i in range(start, stop, step):
 ```
 <!-- .element: class="fragment" -->
 
----
-# For Loop Basic I (Core)
 
