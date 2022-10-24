@@ -2,9 +2,6 @@
 --
 >A function is a named block of code that we can execute to perform a specific task.
 --
-see [functions.py](./files/functions.py)
-and [functions.js](./files/functions.js)
---
 ## syntax
 --
 - use the `def` keyword and end the function signature with a colon:
@@ -158,4 +155,8 @@ print(add(1,2) + add(2,3))
 TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
 ```
 <!-- .element: class="fragment" -->
+
+--
+[Functions Basics II](https://github.com/tmax818/functions_basics_ii_python) 
+--
 
