@@ -159,8 +159,3 @@ TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
 ```
 <!-- .element: class="fragment" -->
 
-
----
-# Functions Basic II (Practice)
----
-# Functions Intermediate I (Core)
