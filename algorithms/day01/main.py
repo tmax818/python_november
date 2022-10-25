@@ -1,27 +1,43 @@
+
 ## TODO: Print all the integers from 1 to 255.
 def print_1_to_255():
-    pass
+    for i in range(1, 256):
+        print(i)
 
 # print_1_to_255()
 ## TODO: Print integers from 0 to 255, and with each integer print the sum so far.
 def print_ints_and_sum_0_to_255():
-    pass
+    sum = 0
+    for i in range(256):
+        sum += i
+        print(i, sum)
 
 # print_ints_and_sum_0_to_255()
 ## TODO: Given an array, find and print its largest element.
 def print_max_of_array(arr):
-    pass
+    max = 0
+    for i in arr:
+        if max < i:
+            max = i
+    print(max)
 
-print_max_of_array([1,2,3,4,5,42,6,7,9])
+# print_max_of_array([1,2,3,4,5,42,6,7,9])
 
 ## TODO: Create an array with all the odd integers between 1 and 255 (inclusive).
 def return_odds_array_1_to_255():
-    pass
+    new_list = []
+    for i in range(1, 256, 2):
+        new_list.append(i)
+    return new_list
 
-
+print(return_odds_array_1_to_255())
 ## TODO: Given an array and a value Y, count and print the number of array values greater than Y.
 def return_array_count_greater_thanY(arr, y):
-    pass
+    count = 0
+    for i in arr:
+        if i > y:
+            count += 1
+    print(count)
 
 # ! TEST:
 return_array_count_greater_thanY([23, 45, 67, 12, 42], 20)
