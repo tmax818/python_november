@@ -17,7 +17,19 @@ class Tesla:
     def warranty_expires(self, current_year):
         if self.mileage > 100000 or current_year - self.year > 5:
             self.under_warranty = False
-    
-    
-buddys_tesla = Tesla('white', '3', 2022)
-tylers_tesla = Tesla('red', 'x', 2015)
+            
+    @classmethod
+    def make_car(cls, color, model, year):
+        return Tesla(color, model, year)
+        
+    @classmethod
+    def display_all_teslas(cls):
+        for tesla in cls.all_teslas:
+            print(tesla)
+        
+        
+
+        
+buddys_tesla = Tesla.make_car('white', '3', 2022)
+# buddys_tesla = Tesla('white', '3', 2022)
+# tylers_tesla = Tesla('red', 'x', 2015)
