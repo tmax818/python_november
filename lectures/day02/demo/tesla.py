@@ -11,6 +11,9 @@ class Tesla:
         self.under_warranty = True
         Tesla.all_teslas.append(self)
         
+    # def __repr__(self) -> str:
+    #     return f"The tesla is {self.color}"
+        
     def drive(self, distance):
         self.mileage += distance
         
