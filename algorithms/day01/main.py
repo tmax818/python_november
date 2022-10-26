@@ -40,20 +40,43 @@ def return_array_count_greater_thanY(arr, y):
     print(count)
 
 # ! TEST:
-return_array_count_greater_thanY([23, 45, 67, 12, 42], 20)
+# return_array_count_greater_thanY([23, 45, 67, 12, 42], 20)
 # return_array_count_greater_thanY(return_odds_array_1_to_255(), 163)
 ## TODO: Given an array, print the max, min and average values for that array.
 def printMaxMin_average_array_vals(arr):
-    pass
+    max = arr[0]
+    min = arr[0]
+    sum = 0
+    for i in arr:
+        if max < i:
+            max = i
+        if min > i:
+            min = i
+        sum += i
+    print(max)
+    print(min)
+    print(sum/len(arr))
+    
 
-printMaxMin_average_array_vals([1,2,3,4,5])
+printMaxMin_average_array_vals([1,2,3,4,5,6])
 ## TODO: Replace any negative array values with 'Dojo'.
 def swapStringFor_array_negative_vals(arr):
-    pass
+    new_list = []
+    for i in arr:
+        if i < 0:
+            i = "Dojo"
+        new_list.append(i)
+        print(i)
+    return new_list
 
+# print(swapStringFor_array_negative_vals([-1, 4, -5, 67, -55, 42]))
 def swapStringFor_array_negative_vals2(arr):
-    pass
+    for i in range(len(arr)):
+        if arr[i] < 0:
+            arr[i] = "Dojo"
+    return arr
 
+print(swapStringFor_array_negative_vals2([-1, 4, -5, 67, -55, 42]))
 ## TODO: Print all odd integers from 1 to 255.
 def print_odds_1_to_255():
     pass
