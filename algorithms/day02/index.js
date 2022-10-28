@@ -1,4 +1,10 @@
 /* case insensitive string compare */
+// R - restate/read
+//I - input
+//O - output
+//T - talk
+//WALK
+
 
 const strA1 = "ABC";
 const strB1 = "abc";
@@ -20,4 +26,18 @@ const expected3 = false;
  * @param {string} strB
  * @returns {boolean} If the strings are equal or not.
  */
-function caseInsensitiveStringCompare(strA, strB) {}
+function caseInsensitiveStringCompare(strA, strB) {
+    // check length and return false if no match
+    if (strA.length !== strB.length){
+        return false
+    }
+    // change one (or both) strings to upper or lower
+    if(strA.toUpperCase() !== strB.toUpperCase()){
+        return false
+    } else {
+        return true
+    }
+}
+console.log(caseInsensitiveStringCompare(strA1, strB1))
+console.log(caseInsensitiveStringCompare(strA2, strB2))
+console.log(caseInsensitiveStringCompare(strA3, strB3))
