@@ -23,4 +23,16 @@ const expected4 = "";
  * @param {string} str String to be reversed.
  * @returns {string} The given str reversed.
  */
-function reverseString(str) {}
+function reverseString(str) {
+  let new_str = ""
+  for(i = str.length -1; i >= 0; i--){
+      // console.log(str[i])
+      new_str += str[i]
+  }
+  return new_str
+}
+
+console.log(reverseString(str1))
+console.log(reverseString(str2))
+console.log(reverseString(str3))
+console.log(reverseString(str4))
