@@ -25,4 +25,20 @@
    * @param {string} str
    * @returns {boolean} Whether the given str is a palindrome or not.
    */
-  function isPalindrome(str) {}
+  function isPalindrome(str) {
+    let rev_str = ""
+    for(let i = str.length - 1; i >= 0; i--){
+        rev_str += str[i]
+    }
+    // if(rev_str === str){
+    //     return true
+    // } else {
+    //     return false
+    // }
+    return(rev_str === str)
+  }
+
+  console.log(isPalindrome(str1))
+  console.log(isPalindrome(str2))
+  console.log(isPalindrome(str3))
+  console.log(isPalindrome(str4))
