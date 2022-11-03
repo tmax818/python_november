@@ -1,10 +1,11 @@
 from flask_app import app, render_template, request, redirect
 from flask_app.models.pet import Pet
+from flask_app.models.user import User
 
 #! CREATE
 @app.route('/pet/new')
 def new_pet():
-    return render_template('new_pet.html')
+    return render_template('new_pet.html', users=User.get_all())
 
 @app.route('/pet/create', methods=['post'])
 def create_pet():
@@ -13,9 +14,9 @@ def create_pet():
     return redirect('/')
 
 #! READ ALL
-@app.route('/')
-def index():
-    return render_template('index.html', pets = Pet.get_all())
+@app.route('/pets')
+def pets():
+    return render_template('pets.html', pets = Pet.get_all())
 
 #! READ ONE
 @app.route('/pet/show/<int:id>')
