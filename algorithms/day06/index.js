@@ -28,4 +28,18 @@ const expected3 = {};
  * @returns {Object<string, number>} A frequency table where the keys are items
  *    from the given arr and the values are the amnt of times that item occurs.
  */
-function makeFrequencyTable(arr) {}
+function makeFrequencyTable(arr) {
+  const freq_table = {}
+  for(let i = 0; i < arr.length; i++){
+    if(!freq_table[arr[i]]){
+      freq_table[arr[i]] = 1
+    } else {
+      freq_table[arr[i]]++
+    }
+  }
+  return freq_table
+}
+
+console.log(makeFrequencyTable(arr1))
+console.log(makeFrequencyTable(arr2))
+console.log(makeFrequencyTable(arr3))
