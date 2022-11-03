@@ -42,10 +42,25 @@ class User:
         return connectToMySQL(DATABASE).query_db(query, data)
     
     
-    
-    
     #! DELETE
     @classmethod
     def destroy(cls, data):
         query = "DELETE FROM users WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query, data)
+    
+    # TODO create a class method to retrive all the pets that belong to a certain user
+    
+    # TODO write a join sql query to get a user and all its pets
+
+    # TODO the query will be a list of dictionaries. Each dictionary will contain all the attributes of the user and one of the user's pets.
+    
+    # TODO create an instance of the user class that will have the pets attribute. The attribute is a list of all that user's pets
+    # TODO loop over the list of dictionaries returned from the database.
+
+    # TODO create a dictionary to hold and format the pet's data from each dictionary.
+    
+    # TODO append `pets.`to the attributes where needed:
+    
+    # TODO once the dictionary is created for each pets, append it to the pets attribute list. Inside the append method, convert the dictionary created in the previous step to an instance of the pet class.
+    
+    # TODO finally, return the user created above. It will contain the pets attribute created in the for loop above.
