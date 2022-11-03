@@ -1,48 +1,44 @@
 from flask_app import app, render_template, request, redirect
-from flask_app.models.painting import Painting
+from flask_app.models.pet import Pet
 
 #! CREATE
-@app.route('/painting/new')
-def new_painting():
-    return render_template('new_painting.html')
+@app.route('/pet/new')
+def new_pet():
+    return render_template('new_pet.html')
 
-@app.route('/painting/create', methods=['post'])
-def create_painting():
+@app.route('/pet/create', methods=['post'])
+def create_pet():
     print(request.form)
-    Painting.save(request.form)
+    Pet.save(request.form)
     return redirect('/')
 
 #! READ ALL
 @app.route('/')
 def index():
-    return render_template('index.html', paintings = Painting.get_all())
+    return render_template('index.html', pets = Pet.get_all())
 
 #! READ ONE
-
-@app.route('/painting/show/<int:id>')
-def show_painting(id):
+@app.route('/pet/show/<int:id>')
+def show_pet(id):
     data = {'id': id}
-    return render_template('show_painting.html', painting = Painting.get_one(data))
-
-
+    return render_template('show_pet.html', pet = Pet.get_one(data))
 
 #! UPDATE
-
-@app.route('/painting/edit/<int:id>')
-def edit_painting(id):
+@app.route('/pet/edit/<int:id>')
+def edit_pet(id):
     print(id)
     data = {'id': id}
-    return render_template('edit_painting.html', painting = Painting.get_one(data))
+    return render_template('edit_pet.html', pet = Pet.get_one(data))
 
-@app.route('/painting/update', methods=['post'])
-def update_painting():
+@app.route('/pet/update', methods=['post'])
+def update_pet():
     print(request.form)
-    Painting.update(request.form)
+    Pet.update(request.form)
     return redirect('/')
 
 #! DELETE
-@app.route('/painting/delete/<int:id>')
-def delete_painting(id):
+@app.route('/pet/delete/<int:id>')
+def delete_pet(id):
     data = {'id': id}
-    Painting.destroy(data)
+    Pet.destroy(data)
     return redirect('/')
