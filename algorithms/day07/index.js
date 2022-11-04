@@ -1,7 +1,20 @@
-const makeFrequencyTable = require('../day06/index').makeFrequencyTable
+// const makeFrequencyTable = require('../day06/index').makeFrequencyTable
 // console.log(makeFrequencyTable)
+const testarr = ['a', 'a', 'b', 'b', 'c', 'c', 'c']
+const expecttest = {a:2, b: 2, c: 3}
+function makeFrequencyTable(arr){
+    const freq_table = {}
+    for(let i = 0; i < arr.length; i++){
+        if(!freq_table[arr[i]]){
+            freq_table[arr[i]] = 1
+        } else {
+            freq_table[arr[i]]++
+        }
+    }
+    return freq_table
+}
 
-
+// console.log(makeFrequencyTable(testarr))
 
 /* 
   Given in an alumni interview in 2021.
@@ -37,9 +50,21 @@ const makeFrequencyTable = require('../day06/index').makeFrequencyTable
    * @returns {string} The given string encoded.
    */
   function encodeStr(str) {
+    const strObj = makeFrequencyTable(str)
+    let newStr = ""
+    for (const [key, value] of Object.entries(strObj)) {
+        newStr += key
+        newStr += value // f"{key}: {value}""
+      }
+    // console.log(newStr)
+    if(newStr.length < str.length ){
+        return(newStr)
+    } else {
+        return(str)
+    }
   }
 
-  encodeStr(str1)
-  encodeStr(str2)
-  encodeStr(str3)
-  encodeStr(str4)
+  console.log(encodeStr(str1))
+  console.log(encodeStr(str2))
+  console.log(encodeStr(str3))
+  console.log(encodeStr(str4))
