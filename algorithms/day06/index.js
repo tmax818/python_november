@@ -43,3 +43,5 @@ function makeFrequencyTable(arr) {
 console.log(makeFrequencyTable(arr1))
 console.log(makeFrequencyTable(arr2))
 console.log(makeFrequencyTable(arr3))
+
+module.exports = {makeFrequencyTable}
