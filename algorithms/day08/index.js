@@ -26,4 +26,25 @@
    * @param {Array<any>} values
    * @returns {Object} The object with the given keys and values.
    */
-  function zipArraysIntoMap(keys, values) {}
+  function zipArraysIntoMap(keys, values) {
+    const newObj = {}
+    // for loop goes here
+    for(let i = 0; i < keys.length; i++){
+      // console.log(keys[i], values[i])
+      newObj[keys[i]] = values[i]
+    }
+    Object.keys(newObj).map(key => {
+      console.log(typeof(key))
+    })
+
+  }
+
+  console.log(zipArraysIntoMap(keys1, vals1))
+  console.log(zipArraysIntoMap(keys2, vals2))
+
+//   const testObj = {}
+// // {tyler: 'maxwell'}
+
+// testObj['tyler'] = 'maxwell'
+
+// console.log(testObj)
