@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    {{dojos}}
     <div class="container">
         <div class="row">
             <div class="col">
@@ -30,6 +29,8 @@
                     <a href="/dojos/{{dojo.id}}">{{dojo.name}}</a>
                 </p>
                 {% endfor %}
+
+                <a class="btn btn-warning" href="/ninjas">Add Ninja</a>
             </div>
         </div>
     </div>
