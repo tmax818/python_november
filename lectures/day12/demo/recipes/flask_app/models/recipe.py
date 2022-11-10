@@ -36,6 +36,26 @@ class Recipe:
             recipes.append( cls(u) )
         return recipes
     
+    # ! READ/RETRIEVE ONE
+    @classmethod
+    def get_one(cls,data:dict) -> object:
+        query  = "SELECT * FROM recipes JOIN users ON users.id = recipes.user_id WHERE recipes.id = %(id)s;"
+        result = connectToMySQL(DATABASE).query_db(query,data)
+        return cls(result[0])
+    
+    
+        # ! UPDATE
+    @classmethod
+    def update(cls,data:dict) -> int:
+        query = "UPDATE recipes SET name=%(name)s,description=%(description)s,instructions=%(instructions)s, date_made=%(date_made)s, under_30=%(under_30)s, user_id=%(user_id)s WHERE id = %(id)s;"
+        return connectToMySQL(DATABASE).query_db(query,data)
+
+    # ! DELETE
+    @classmethod
+    def destroy(cls,data:dict):
+        query  = "DELETE FROM recipes WHERE id = %(id)s;"
+        return connectToMySQL(DATABASE).query_db(query,data)
+  
     @staticmethod
     def validate_recipe(recipe):
         is_valid = True
