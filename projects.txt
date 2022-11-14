@@ -1,0 +1,11 @@
+- Buddy - music blog: artists featured on digital magazine. All genre music news, artist comunity - redit - post questions and responses. 
+Goal: figure out database. and mobile to web with bootstrap. login and reg on db. 
+
+- Eric - website finger nails painting for artists.
+Goal: fix the banner
+
+- Nick - book rental app. login/reg, sort/filter, rental and return a book. 
+Goal: template/wireframe.
+
+- Ryan - app for travel - car focused
+Goal: start/wireframe
