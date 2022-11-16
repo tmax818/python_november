@@ -1,11 +1,17 @@
-- Buddy - music blog: artists featured on digital magazine. All genre music news, artist comunity - redit - post questions and responses. 
-Goal: figure out database. and mobile to web with bootstrap. login and reg on db. 
+- Buddy - music blog: artists featured on digital magazine. All genre music news, artist comunity - redit - post questions and responses. Got db yesterday 11/14. login reg finished. 
+Goal: figure out database. and mobile to web with bootstrap. login and reg on db.
+Goal: focus on functionality of artist community page. 
 
-- Eric - website finger nails painting for artists.
+- Eric - website finger nails painting for artists. fix banner (11/14), Wireframe? yes
 Goal: fix the banner
+Goal: specific route not showing up. work on DB 
 
 - Nick - book rental app. login/reg, sort/filter, rental and return a book. 
-Goal: template/wireframe.
+Goal: template/wireframe. took a long time!! finished 11/14
+Goal: admin page/admin login/dashboard manage resources for site. 
 
-- Ryan - app for travel - car focused
-Goal: start/wireframe
+- Ryan - app for travel - car focused, 
+change: to veteran resources page. Chat area, login/reg  
+Goal: start/wireframe, $$$$ed it up!!!
+Goal: get it going!!! fix front end
+
