@@ -1,17 +1,27 @@
-- Buddy - music blog: artists featured on digital magazine. All genre music news, artist comunity - redit - post questions and responses. Got db yesterday 11/14. login reg finished. 
+- Buddy - music blog: artists featured on digital magazine. All genre music news, artist comunity - redit - post questions and responses. Got db yesterday 11/14. login reg finished. Finished functionality of community page
 Goal: figure out database. and mobile to web with bootstrap. login and reg on db.
 Goal: focus on functionality of artist community page. 
+Goal: make sure style is done/consistent across site.
 
-- Eric - website finger nails painting for artists. fix banner (11/14), Wireframe? yes
+- Eric - website finger nails painting for artists. fix banner (11/14), Wireframe? yes. Worked on dropdown. Paintings is done with categories, work on nails
 Goal: fix the banner
 Goal: specific route not showing up. work on DB 
+Goal: finish dropdown/ get on broken route!!!
 
-- Nick - book rental app. login/reg, sort/filter, rental and return a book. 
+- Nick - book rental app. login/reg, sort/filter, rental and return a book. Learn templating in flask. add subfolders to templates folder for organization.  
 Goal: template/wireframe. took a long time!! finished 11/14
 Goal: admin page/admin login/dashboard manage resources for site. 
+Goal: frontend work/functionality
 
 - Ryan - app for travel - car focused, 
-change: to veteran resources page. Chat area, login/reg  
+change: to veteran resources page. Chat area, login/reg, finish static frontend
 Goal: start/wireframe, $$$$ed it up!!!
 Goal: get it going!!! fix front end
+Goal: chat and shop page.
+
+- Jahmil: call Mom!!!, author website for mom. 
+Goal: call mom, tell her how much you love her!! 
+
+- Roy: task rabbit influenced site.
+Goal: wireframe, generate ideas, API 
 
